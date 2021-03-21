@@ -9,7 +9,7 @@ SECRET_KEY = "nbsk_l&e$t6l6#(+51-#j7%d%0%7t#1j7&yu^k(5$prd*qbnd%"
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['crud-api-task.herokuapp.com',
+ALLOWED_HOSTS = ['blooming-brushlands-62637.herokuapp.com',
                  'localhost', '127.0.0.1']
 
 INSTALLED_APPS = [
