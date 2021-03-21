@@ -13,17 +13,8 @@ services:
 
   worker:
     build: .
-    command: celery -A crud_api worker -l info
-    environment:
-      DEBUG: 1
-    volumes:
-      - .:/app
-    depends_on:
-      - web
-
-  worker2:
-    build: .
-    command: celery -A crud_api beat -l info
+    command: celery -A crud_api worker -l info --detach &&
+             celery -A crud_api beat -l info --detach
     environment:
       DEBUG: 1
     volumes:
