@@ -16,8 +16,8 @@ decorator==4.4.2
 defusedxml==0.7.1
 Django>=3
 django-templated-mail==1.1.1
-djangorestframework>=3.11
-djangorestframework-simplejwt
+djangorestframework>=3.12
+djangorestframework-simplejwt>=4.5
 gunicorn
 djoser
 flake8
@@ -32,7 +32,7 @@ prompt-toolkit==3.0.17
 pycparser==2.20
 Pygments==2.8.1
 psycopg2-binary
-PyJWT>=2.0.0
+PyJWT>=2.0.1
 python3-openid==3.2.0
 pytz==2021.1
 redis
