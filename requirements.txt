@@ -17,9 +17,7 @@ defusedxml==0.7.1
 Django>=3
 django-templated-mail==1.1.1
 djangorestframework>=3.11
-djangorestframework-jwt
 djangorestframework-simplejwt
-
 djoser
 flake8
 idna==2.10
