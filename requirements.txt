@@ -16,8 +16,8 @@ decorator==4.4.2
 defusedxml==0.7.1
 Django>=3
 django-templated-mail==1.1.1
-djangorestframework>=3.12
-djangorestframework-simplejwt>=4.4
+djangorestframework>=3.9
+djangorestframework-simplejwt==4.4
 gunicorn
 djoser
 flake8
