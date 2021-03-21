@@ -1,6 +1,6 @@
 from rest_framework import viewsets, generics
 from rest_framework.permissions import IsAuthenticated
-from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+from rest_framework_simplejwt.authentication import JWTAuthentication
 
 
 from .models import Post, Comment
@@ -38,7 +38,7 @@ class UpdatePostUpvotesView(generics.UpdateAPIView):
     queryset = Post.objects.all()
     serializer_class = PostUpvotesSerializer
     permission_classes = (IsAuthenticated,)
-    authentication_class = (JSONWebTokenAuthentication,)
+    authentication_class = (JWTAuthentication,)
 
     def perform_update(self, serializer):
         serializer.save(user=self.request.user,
