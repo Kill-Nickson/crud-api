@@ -15,7 +15,7 @@ defusedxml==0.7.1
 Django>=3
 django-templated-mail==1.1.1
 djangorestframework
-djangorestframework-jwt>=2
+djangorestframework-jwt==1.7
 djangorestframework-simplejwt
 djoser==2.1.0
 flake8
