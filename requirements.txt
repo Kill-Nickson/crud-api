@@ -1,4 +1,4 @@
-social-auth-core<3
+social-auth-core>=3.3.0
 social-auth-app-django>=4
 apscheduler
 asgiref==3.3.1
