@@ -16,10 +16,10 @@ decorator==4.4.2
 defusedxml==0.7.1
 Django>=3
 django-templated-mail==1.1.1
-djangorestframework>=3.10
+djangorestframework>=3.11
 djangorestframework-jwt
 djangorestframework-simplejwt
-djoser<2
+djoser
 flake8
 idna==2.10
 itypes==1.2.0
