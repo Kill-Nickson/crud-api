@@ -18,5 +18,5 @@
   Link: [Postman documentation](https://www.getpostman.com/collections/2c6998f800e4fa4532e2)
 
   ### Link to Heroku app based on the current crud_api:
-  Link: [Heroku app](https://blooming-brushlands-62637.herokuapp.com)
+  Link: [Heroku deployment link](https://blooming-brushlands-62637.herokuapp.com)
   
