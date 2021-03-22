@@ -7,7 +7,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = "nbsk_l&e$t6l6#(+51-#j7%d%0%7t#1j7&yu^k(5$prd*qbnd%"
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['blooming-brushlands-62637.herokuapp.com',
                  'localhost', '127.0.0.1']
@@ -66,25 +66,14 @@ WSGI_APPLICATION = "crud_api.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "postgres",
-        "USER": "postgres",
-        "PASSWORD": "postgres",
-        "HOST": "db",
+        "NAME": "db1u6n7f8uj98v",
+        "USER": "kqpkyitzbtucoi",
+        "PASSWORD": "03c7b95244a1c5069523158ae74a9b0c070d59c0adde"
+                    "166792a61c57fa8a1379",
+        "HOST": 'ec2-52-71-161-140.compute-1.amazonaws.com',
         "PORT": 5432,
     }
 }
-
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.postgresql",
-#         "NAME": "db1u6n7f8uj98v",
-#         "USER": "kqpkyitzbtucoi",
-#         "PASSWORD": "03c7b95244a1c5069523158ae74a9b0c070d59c0adde"
-#                     "166792a61c57fa8a1379",
-#         "HOST": 'ec2-52-71-161-140.compute-1.amazonaws.com',
-#         "PORT": 5432,
-#     }
-# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
