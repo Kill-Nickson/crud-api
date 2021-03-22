@@ -3,34 +3,17 @@ version: '3.7'
 services:
   web:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: sh -c "python manage.py migrate &&
+      celery -A crud_api worker -l info --without-gossip --without-mingle --without-heartbeat
+      -Ofair --pool=solo --detach &&
+      celery -A crud_api beat -l info --detach  &&
+      python manage.py runserver 0.0.0.0:8000"
     volumes:
       - .:/app
     ports:
       - 8000:8000
     depends_on:
       - db
-
-  worker:
-    build: .
-    command: celery -A crud_api worker -l info
-    environment:
-      DEBUG: 1
-    volumes:
-      - .:/app
-    depends_on:
-      - web
-
-  worker2:
-    build: .
-    command: celery -A crud_api beat -l info
-    environment:
-      DEBUG: 1
-    volumes:
-      - .:/app
-    depends_on:
-      - web
-
   db:
     image: postgres:latest
     restart: always

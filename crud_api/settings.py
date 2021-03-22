@@ -7,9 +7,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = "nbsk_l&e$t6l6#(+51-#j7%d%0%7t#1j7&yu^k(5$prd*qbnd%"
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['crud-api-task.herokuapp.com',
+ALLOWED_HOSTS = ['blooming-brushlands-62637.herokuapp.com',
                  'localhost', '127.0.0.1']
 
 INSTALLED_APPS = [
@@ -114,6 +114,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = "/static/"
 
 AUTH_USER_MODEL = "users.MyUser"
